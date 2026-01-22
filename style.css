@@ -188,7 +188,8 @@ body {
   font-weight: 500;
   color: var(--primary);
   text-align: center;
-  white-space: nowrap !important; 
+  white-space: nowrap !important;
+  margin-top: 16px;
 }
 
 .download-button:active {
@@ -212,7 +213,7 @@ body {
 .footer-menu {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 0;
   margin-bottom: 48px; 
 }
 
@@ -363,13 +364,13 @@ body {
   }
 
   .footer-menu a:not(:last-child) {
-    padding-bottom: 10px; 
+    padding-bottom: 8px; 
     border-bottom: 1px solid #4B5563;
   }
 
   .footer-menu a {
     font-size: 13px;
-    padding-top: 10px; 
+    padding-top: 8px; 
     text-align: center;
   }
 
@@ -505,11 +506,11 @@ body {
   .footer-menu a {
     font-size: 12px;
     text-align: center;
-    padding: 10px 0; 
+    padding: 8px 0; 
   }
 
   .footer-menu a:not(:last-child) {
-    padding-bottom: 10px; 
+    padding-bottom: 8px; 
     border-bottom: 1px solid #4B5563;
   }
 
