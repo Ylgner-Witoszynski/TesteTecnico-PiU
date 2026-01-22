@@ -47,8 +47,12 @@ body {
 }
 
 .logo .logo__image {
-  height: 24px; 
+  width: 127;
+  height: 32;
+  range: 0 deg;
+  opacity: 1;
 }
+
 
 .nav {
   display: flex;
@@ -241,12 +245,13 @@ body {
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    text-align: center;
   }
 
   .logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
   }
 
   .nav {
@@ -390,8 +395,8 @@ body {
   }
 
   .logo {
-    width: 100%;
     justify-content: center;
+    width: 100%;
   }
 
   .logo .logo__image {

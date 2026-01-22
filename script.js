@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       setTimeout(() => {
         downloadBtnText.textContent = 'Download concluído!';
-        downloadLabel.textContent = 'O download foi iniciado. Verifique sua pasta de downloads.';
+        downloadLabel.textContent = 'Download iniciado. Verifique sua pasta de downloads.';
         downloadLabel.style.color = '#6B7280'; 
 
         
