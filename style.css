@@ -1,0 +1,548 @@
+/* =========================
+   RESET + BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+:root {
+  --primary: #2563eb;
+  --gray-900: #111827;
+  --gray-700: #374151;
+  --gray-500: #6b7280;
+  --gray-400: #9ca3af;
+  --gray-300: #d1d5db;
+  --gray-200: #ececed;
+  --gray-100: #f5f5f6;
+  --dark-bg: #1f2937;
+  --white: #ffffff;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo .logo__image {
+  height: 24px; /* Adjust as needed */
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.24;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.48;
+  color: var(--gray-500);
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+  max-width: 660px;
+  margin: 40px auto 0;
+  padding: 24px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Card Top */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-icon {
+  width: 72px;
+  height: 72px;
+  background: var(--gray-100);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 1.48;
+  color: var(--gray-500);
+  text-align: center;
+}
+
+/* =========================
+   DOWNLOAD INFO
+========================= */
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.download-info {
+  display: flex;
+  gap: 32px;
+}
+
+.download-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+
+.download-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center items horizontally in a column flex container */
+  /* The gap is inherited or defined by the parent .download, so explicit gap here is optional */
+}
+
+/* =========================
+   BUTTON
+========================= */
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  flex-shrink: 0; /* Prevent the button from shrinking */
+  width: fit-content; /* Make the button adapt to its content */
+  height: 56px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.download-button .button-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.download-button:hover {
+  opacity: 0.9;
+}
+
+.download-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary);
+  text-align: center;
+  /* width: 243px; */ /* Removed fixed width */
+  white-space: nowrap !important; /* Ensure text stays on a single line */
+}
+
+.download-button:active {
+  transform: scale(0.98);
+}
+
+.download-button:disabled,
+.download-button[aria-disabled="true"] {
+  background: var(--gray-400);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background: var(--dark-bg);
+  padding: 40px;
+  margin-top: 80px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 48px; /* Increased space */
+}
+
+.footer-menu a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f9fafb;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Separador desktop */
+.footer-menu a:not(:last-child)::after {
+  content: '|';
+  margin-left: 24px;
+  margin-right: 24px;
+  color: #4B5563;
+}
+
+.footer-copy {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-400);
+  text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 16px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav {
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 48px 16px 32px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    color: var(--gray-700);
+  }
+
+  .card {
+    padding: 20px;
+    margin: 20px 16px 0;
+    gap: 32px;
+    border-radius: 8px;
+  }
+
+  .card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .card-description {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--gray-600);
+  }
+
+  .download-info {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .download-item {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .download-item img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .download-button {
+    width: auto;
+    padding: 14px 28px;
+    height: 48px;
+    font-size: 15px;
+    border-radius: 6px;
+    gap: 8px;
+  }
+
+  .download-button .button-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .download-label {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 12px;
+    white-space: normal;
+  }
+
+  .footer {
+    padding: 24px 16px;
+    margin-top: 48px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch; /* Changed from center to stretch */
+  }
+
+  /* Remove o | no mobile */
+  .footer-menu a::after {
+    display: none;
+  }
+
+  .footer-menu a:not(:last-child) {
+    padding-bottom: 10px; /* Decreased padding-bottom */
+    border-bottom: 1px solid #4B5563;
+  }
+
+  .footer-menu a {
+    font-size: 13px;
+    padding-top: 10px; /* Decreased padding-top */
+    text-align: center;
+  }
+
+  .footer-copy {
+    font-size: 13px;
+    margin-top: 24px;
+    margin-bottom: 16px; /* Re-added for more space below */
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    height: 115px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 24px 16px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo .logo__image {
+    height: 20px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .hero {
+    padding: 32px 16px 24px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .card {
+    margin: 16px 16px 0;
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .card-header {
+    gap: 16px;
+  }
+
+  .card-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .card-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .card-description {
+    font-size: 13px;
+  }
+
+  .download-info {
+    gap: 16px;
+  }
+
+  .download-item {
+    font-size: 12px;
+  }
+
+  .download-item img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .download-button {
+    width: fit-content;
+    padding: 12px 20px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .download-button .button-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .download-label {
+    font-size: 12px;
+    margin-top: 8px;
+    white-space: normal;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 16px;
+    margin-top: 32px;
+  }
+
+  .footer-menu {
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .footer-menu a {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0; /* Decreased padding */
+  }
+
+  .footer-menu a:not(:last-child) {
+    padding-bottom: 10px; /* Decreased padding-bottom */
+    border-bottom: 1px solid #4B5563;
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    margin-top: 16px;
+    margin-bottom: 12px; /* Re-added for more space below */
+  }
+}
+
+

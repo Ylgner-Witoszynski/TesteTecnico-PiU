@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de obrigado com download automático de e-book"
+    />
+
+    <title>Obrigado pelo seu interesse</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-content">
+          <div class="logo">
+            <img src="icons/logo.svg" alt="BookHub" class="logo__image" />
+          </div>
+
+          <nav class="nav" aria-label="Menu principal">
+            <a href="#">Início</a>
+            <a href="#">Biblioteca</a>
+            <a href="#">Contato</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main>
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+          <h1 id="hero-title">Obrigado pelo seu interesse!</h1>
+          <p>Seu e-book está pronto para download</p>
+        </section>
+
+        <!-- CARD -->
+        <section class="card" aria-labelledby="ebook-title">
+          <div class="card-header">
+            <div class="card-icon" aria-hidden="true">
+              <img src="icons/hero card icon.svg" alt="" />
+            </div>
+
+            <h2 id="ebook-title" class="card-title">
+              Guia Completo de Marketing Digital 2026
+            </h2>
+
+            <p class="card-description">
+              Aprenda as principais estratégias de marketing digital com este
+              guia completo e atualizado.
+            </p>
+          </div>
+
+          <!-- DOWNLOAD -->
+          <div class="download">
+            <ul class="download-info">
+              <li class="download-item">
+                <img src="icons/pdf.svg" alt="" aria-hidden="true" />
+                <span>PDF</span>
+              </li>
+
+              <li class="download-item">
+                <img src="icons/pages.svg" alt="" aria-hidden="true" />
+                <span>45 páginas</span>
+              </li>
+
+              <li class="download-item">
+                <img src="icons/tamanho.svg" alt="" aria-hidden="true" />
+                <span>8.5 MB</span>
+              </li>
+            </ul>
+
+            <div class="download-actions">
+              <button
+                id="downloadBtn"
+                class="download-button"
+                aria-disabled="false"
+              >
+                <img
+                  src="icons/download.svg"
+                  alt=""
+                  class="button-icon"
+                  aria-hidden="true"
+                />
+                <span id="downloadBtnText">Baixar E-book</span>
+              </button>
+
+              <span id="countdown" class="download-label" aria-live="polite">
+                Seu download começará em 5 segundos...
+              </span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <nav class="footer-menu" aria-label="Links do rodapé">
+          <a href="#">Política de privacidade</a>
+          <a href="#">Termos de uso</a>
+          <a href="#">Contato</a>
+        </nav>
+
+        <p class="footer-copy">© 2026 BookHub. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
