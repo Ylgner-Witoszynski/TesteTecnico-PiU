@@ -47,9 +47,8 @@ body {
 }
 
 .logo .logo__image {
-  width: 127;
-  height: 32;
-  range: 0 deg;
+  width: 127px;
+  height: 32px;
   opacity: 1;
 }
 
@@ -153,7 +152,7 @@ body {
 .download-actions {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 
@@ -161,10 +160,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18.5px; 
+  gap: 18.5px;
   padding: 16px 24px;
-  flex-shrink: 0; 
-  width: fit-content; 
+  flex-shrink: 0;
+  width: fit-content;
   height: 56px;
   background: var(--primary);
   color: var(--white);
@@ -191,7 +190,7 @@ body {
   color: var(--primary);
   text-align: center;
   white-space: nowrap !important;
-  margin-top: 8px; 
+  margin-top: 8px;
 }
 
 .download-button:active {
@@ -216,7 +215,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 0;
-  margin-bottom: 48px; 
+  margin-bottom: 48px;
 }
 
 .footer-menu a {
@@ -244,7 +243,7 @@ body {
 
 @media (max-width: 768px) {
   .header-content {
-    padding: 24px 124px 24px 124px; 
+    padding: 24px 124px 24px 124px;
     flex-direction: column;
     gap: 16px;
     align-items: center;
@@ -285,8 +284,8 @@ body {
   }
 
   .card {
-    padding: 24px 20px 20px; 
-    margin: 0 16px 0; 
+    padding: 24px 20px 20px;
+    margin: 0 16px 0;
     gap: 32px;
     border-radius: 8px;
   }
@@ -361,33 +360,33 @@ body {
   .footer-menu {
     flex-direction: column;
     gap: 0;
-    align-items: stretch; 
+    align-items: stretch;
   }
 
- 
+
   .footer-menu a::after {
     display: none;
   }
 
   .footer-menu a:not(:last-child) {
-    padding-bottom: 8px; 
+    padding-bottom: 8px;
     border-bottom: 1px solid #4B5563;
   }
 
   .footer-menu a {
     font-size: 13px;
-    padding-top: 8px; 
+    padding-top: 8px;
     text-align: center;
   }
 
   .footer-copy {
     font-size: 13px;
     margin-top: 24px;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
   }
 
   .header {
-    padding: 0; 
+    padding: 0;
   }
 
 }
@@ -517,17 +516,17 @@ body {
   .footer-menu a {
     font-size: 12px;
     text-align: center;
-    padding: 8px 0; 
+    padding: 8px 0;
   }
 
   .footer-menu a:not(:last-child) {
-    padding-bottom: 8px; 
+    padding-bottom: 8px;
     border-bottom: 1px solid #4B5563;
   }
 
   .footer-copy {
     font-size: 11px;
     margin-top: 16px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
   }
 }
