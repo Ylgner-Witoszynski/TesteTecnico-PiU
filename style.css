@@ -29,7 +29,7 @@ body {
 
 
 .header {
-  padding: 1rem 0;
+  padding: 0;
   border-bottom: 1px solid var(--gray-200);
 }
 
@@ -37,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 30.5px 40px;
 }
 
 .logo {
@@ -103,7 +103,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 8px;
 }
 
 .card-icon {
@@ -161,7 +161,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 18.5px; 
   padding: 16px 24px;
   flex-shrink: 0; 
   width: fit-content; 
@@ -191,7 +191,7 @@ body {
   color: var(--primary);
   text-align: center;
   white-space: nowrap !important;
-  margin-top: 16px;
+  margin-top: 8px; 
 }
 
 .download-button:active {
@@ -244,7 +244,7 @@ body {
 
 @media (max-width: 768px) {
   .header-content {
-    padding: 0 16px;
+    padding: 24px 124px 24px 124px; 
     flex-direction: column;
     gap: 16px;
     align-items: center;
@@ -258,7 +258,7 @@ body {
   }
 
   .nav {
-    gap: 12px;
+    gap: 20px;
     width: 100%;
     justify-content: center;
     flex-direction: row;
@@ -269,7 +269,7 @@ body {
   }
 
   .hero {
-    padding: 48px 16px 32px;
+    padding: 56px 16px 32px;
   }
 
   .hero h1 {
@@ -285,10 +285,14 @@ body {
   }
 
   .card {
-    padding: 20px;
-    margin: 20px 16px 0;
+    padding: 24px 20px 20px; 
+    margin: 0 16px 0; 
     gap: 32px;
     border-radius: 8px;
+  }
+
+  .card-header {
+    gap: 24px;
   }
 
   .card-icon {
@@ -381,6 +385,11 @@ body {
     margin-top: 24px;
     margin-bottom: 16px; 
   }
+
+  .header {
+    padding: 0; 
+  }
+
 }
 
 @media (max-width: 375px) {
@@ -501,7 +510,7 @@ body {
   }
 
   .footer-menu {
-    gap: 0;
+    gap: 12px;
     align-items: stretch;
   }
 
@@ -519,8 +528,6 @@ body {
   .footer-copy {
     font-size: 11px;
     margin-top: 16px;
-    margin-bottom: 12px; 
+    margin-bottom: 40px; 
   }
 }
-
-
