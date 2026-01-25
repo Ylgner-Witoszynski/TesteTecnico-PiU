@@ -1,4 +1,4 @@
-# BookHub - Página de Obrigado com Download de E-book
+# BookHub - Página de Download de E-book
 
 Uma página responsiva e moderna para apresentar e-books com funcionalidade de download automático com countdown.
 
